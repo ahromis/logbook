@@ -7,3 +7,7 @@ This container is meant to output journald logs in `json` format so that they ca
 1. Clone this repo
 2. `docker stack deploy -c docker-compose.yml logbook`
 3. Set your log forwarder to use `logbook_docker-journal` as a volume or `/var/lib/docker/volumes/logbook_docker-journal/_data`
+
+## Configuration
+
+The environment variables `LOG_SIZE` and `NUM_SEGM` can be specified in the compose file to define the default log size, and how many segments to keep.

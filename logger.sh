@@ -1,5 +1,5 @@
-LOG_SIZE=10000000
-NUM_SEGM=2
+LOG_SIZE="${LOG_SIZE:-10000000}"
+NUM_SEGM="${NUM_SEGM=-2}"
 while getopts "s:n:" opt; do
   case "$opt" in
     s)
