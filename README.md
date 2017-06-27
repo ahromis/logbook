@@ -1,4 +1,4 @@
-# logbook - a simple logger to forward journald logs
+# logbook - a simple logger to help forward journald logs
 
 This container is meant to output journald logs in `json` format so that they can be shipped to a log collector. This allows for `docker logs` to still work while also outputting the logs in a consumable form for most log forwarders.
 
