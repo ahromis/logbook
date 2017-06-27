@@ -1,0 +1,18 @@
+version: "3.0"
+
+services:
+
+  logbook:
+    environment:
+      LOG_SIZE: 10000000
+      NUM_SEGM: 2
+    image: ahromis/logbook:latest
+    volumes:
+      - /var/run:/var/run
+      - docker-journal:/var/log/docker
+    deploy:
+      mode: global
+
+volumes:
+  docker-journal:
+    driver: local
