@@ -16,7 +16,7 @@ services:
          condition: on-failure
     volumes:
       - /var/run/log:/var/run/log
-      - docker-journal:/var/log/docker
+      - docker-journal:/log
 
 volumes:
   docker-journal:
