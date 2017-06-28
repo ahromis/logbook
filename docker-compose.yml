@@ -4,7 +4,7 @@ services:
 
   logbook:
     environment:
-      LOG_SIZE: 10000000
+      LOG_SIZE: 10485760
       NUM_SEGM: 2
     image: ahromis/logbook:latest
     volumes:
