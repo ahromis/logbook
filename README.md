@@ -13,7 +13,7 @@ This container is meant to output Docker journald logs in `json` format so that 
 ```
 3. Send a SIGHUP (or restart) the Docker daemon for changes to take effect
 4. `docker stack deploy -c docker-compose.yml logbook`
-5. Set your log forwarder to use `logbook_docker-journal` as an external volume or `/var/lib/docker/volumes/logbook_docker-journal/_data`
+5. Set your log forwarder to use `logbook_docker-journal` as an external volume or bind mount `/var/lib/docker/volumes/logbook_docker-journal/_data:/logs`
 
 ## Configuration
 
