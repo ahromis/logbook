@@ -7,9 +7,6 @@ services:
       LOG_SIZE: 10000000
       NUM_SEGM: 2
     image: ahromis/logbook:latest
-    volumes:
-      - /var/run/log:/var/run/log
-      - docker-journal:/var/log/docker
     deploy:
       mode: global
       update_config:
@@ -17,6 +14,9 @@ services:
          delay: 10s
       restart_policy:
          condition: on-failure
+    volumes:
+      - /var/run/log:/var/run/log
+      - docker-journal:/var/log/docker
 
 volumes:
   docker-journal:
