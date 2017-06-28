@@ -12,6 +12,9 @@ services:
       - docker-journal:/var/log/docker
     deploy:
       mode: global
+      update_config:
+         parallelism: 2
+         delay: 10s
 
 volumes:
   docker-journal:
