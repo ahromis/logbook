@@ -15,6 +15,7 @@ if [ $# == 0 -o -z "$1" ]; then
     echo "missing output file argument"
     exit 1
 fi
+umask 027
 OUT_FILE=$1
 shift
 NUM=1
