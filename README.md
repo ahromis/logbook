@@ -1,6 +1,6 @@
 # logbook
 
-This container is meant to output Docker journald logs in `json` format so that they can be shipped to a log collector. This allows for `docker logs` to still work while also outputting the logs in a consumable form for most log forwarders.
+This container is meant to output Docker journald logs in `json` format so that they can be shipped to a log collector. This allows for local logging to still function while also outputting the logs to a consumable format for most log forwarders.
 
 ## Usage
 
